@@ -1,19 +1,21 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { BriefcaseIcon, ChevronDown, ChevronUp } from "lucide-react"
-import { ExperienceCard } from "@/components/experience-card"
-import { AnimatedSection } from "@/components/animated-section"
-import { getExperienceInfo } from "@/lib/data"
+import { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { BriefcaseIcon, ChevronDown, ChevronUp } from "lucide-react";
+import { ExperienceCard } from "@/components/experience-card";
+import { AnimatedSection } from "@/components/animated-section";
+import { getExperienceInfo } from "@/lib/data";
 
 export function ExperienceSection() {
-  const [showAll, setShowAll] = useState(false)
-  const experienceInfo = getExperienceInfo()
+  const [showAll, setShowAll] = useState(false);
+  const experienceInfo = getExperienceInfo();
 
-  const displayedExperiences = showAll ? experienceInfo : experienceInfo.slice(0, 3)
-  const hasMoreExperiences = experienceInfo.length > 3
+  const displayedExperiences = showAll
+    ? experienceInfo
+    : experienceInfo.slice(0, 3);
+  const hasMoreExperiences = experienceInfo.length > 3;
 
   return (
     <AnimatedSection animation="fade-up" id="experience">
@@ -26,11 +28,16 @@ export function ExperienceSection() {
 
           <div className="space-y-6 sm:space-y-8">
             {displayedExperiences.map((experience, index) => (
-              <AnimatedSection key={index} animation="fade-up" delay={100 * (index + 1)}>
+              <AnimatedSection
+                key={index}
+                animation="fade-up"
+                delay={100 * (index + 1)}
+              >
                 <ExperienceCard
                   title={experience.title}
                   company={experience.company}
                   period={experience.period}
+                  employmentType={experience.employmentType}
                   description={experience.description}
                   achievements={experience.achievements}
                   technologies={experience.technologies}
@@ -63,5 +70,5 @@ export function ExperienceSection() {
         </CardContent>
       </Card>
     </AnimatedSection>
-  )
+  );
 }

@@ -75,7 +75,12 @@
         "Assisted the instructor in managing computer lab practicals for the Web Design and Web Programming courses, providing technical guidance to approximately 10-35 students per session",
         "Offered support to students in understanding course material, troubleshooting issues, and ensuring smooth practical sessions by assisting in preparing materials and grading assignments for over 80 students each semester"
       ],
-      "technologies": ["Web Design", "Web Programming", "Teaching", "Technical Support"],
+      "technologies": [
+        "Web Design",
+        "Web Programming",
+        "Teaching",
+        "Technical Support"
+      ],
       "positions": [
         {
           "title": "Lead Computer Lab Assistant",
@@ -102,7 +107,12 @@
         "Contributed to the development of websites, including Detik Awards, Tapal Batas, DStory, Ad Marketdata Pegadaian Campaign, Ads Sales Product, and Detik Ads catalog, successfully completing 100% of tasks on time",
         "Initiated the DetikAds catalog project for tracking and reporting ad catalogs, overseeing all stages from PRD, UI/UX design, ERD, prototyping, Laravel development, QA testing, to deployment"
       ],
-      "technologies": ["Frontend Development", "Laravel", "UI/UX Design", "Product Development"]
+      "technologies": [
+        "Frontend Development",
+        "Laravel",
+        "UI/UX Design",
+        "Product Development"
+      ]
     },
     {
       "title": "UI/UX Designer & Web Frontend",
@@ -198,9 +208,33 @@
       "Prototyping",
       "Usability Testing"
     ],
-    "development": ["HTML", "CSS", "JavaScript", "Bootstrap", "TailwindCSS", "ReactJS", "SQL", "PHP", "Laravel", "Git"],
-    "uxMethods": ["Design Thinking", "Wireframing", "Design System", "UI Design", "Prototyping", "Usability Testing"],
-    "softSkills": ["Analytical thinking", "Communication skills", "Attention to detail", "Teamwork", "Creative skills"],
+    "development": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "TailwindCSS",
+      "ReactJS",
+      "SQL",
+      "PHP",
+      "Laravel",
+      "Git"
+    ],
+    "uxMethods": [
+      "Design Thinking",
+      "Wireframing",
+      "Design System",
+      "UI Design",
+      "Prototyping",
+      "Usability Testing"
+    ],
+    "softSkills": [
+      "Analytical thinking",
+      "Communication skills",
+      "Attention to detail",
+      "Teamwork",
+      "Creative skills"
+    ],
     "languages": [
       {
         "name": "Indonesian",
