@@ -162,6 +162,13 @@
   "credentials": {
     "certifications": [
       {
+        "name": "React & Backend With AI",
+        "issuer": "Asah led by Dicoding x Accenture",
+        "date": "Jun 2025",
+        "logo": "/generic-military-logo.png",
+        "credentialUrl": ""
+      },
+      {
         "name": "Bootcamp Reactjs Web Frontend Batch 42 2023",
         "issuer": "sanbercode",
         "date": "2023",

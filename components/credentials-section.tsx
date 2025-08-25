@@ -1,11 +1,11 @@
-import Image from "next/image"
-import { Card, CardContent } from "@/components/ui/card"
-import { GraduationCap, Award } from "lucide-react"
-import { AnimatedSection } from "@/components/animated-section"
-import { getCredentialsInfo } from "@/lib/data"
+import Image from "next/image";
+import { Card, CardContent } from "@/components/ui/card";
+import { GraduationCap, Award } from "lucide-react";
+import { AnimatedSection } from "@/components/animated-section";
+import { getCredentialsInfo } from "@/lib/data";
 
 export function CredentialsSection() {
-  const credentialsInfo = getCredentialsInfo()
+  const credentialsInfo = getCredentialsInfo();
 
   return (
     <Card className="bg-zinc-900/70 border-zinc-800 backdrop-blur-sm">
@@ -16,6 +16,41 @@ export function CredentialsSection() {
         </div>
 
         <div className="space-y-6 sm:space-y-8">
+          {/* Education */}
+          <AnimatedSection animation="fade-up" delay={200}>
+            <div className="space-y-4">
+              <h4 className="text-sm font-medium text-zinc-400 flex items-center border-b border-zinc-800 pb-2">
+                <GraduationCap className="w-4 h-4 mr-2 text-cyan-400" />
+                Education
+              </h4>
+              <div className="space-y-3 sm:space-y-4">
+                {credentialsInfo.education.map((edu, index) => (
+                  <div
+                    key={index}
+                    className="flex items-start bg-zinc-800/30 p-2 sm:p-3 rounded-lg"
+                  >
+                    {edu.logo && (
+                      <div className="relative w-10 h-10 rounded overflow-hidden mr-3 flex-shrink-0 bg-zinc-800">
+                        <Image
+                          src={edu.logo || "/placeholder.svg"}
+                          alt={edu.institution}
+                          fill
+                          className="object-contain p-1"
+                        />
+                      </div>
+                    )}
+                    <div>
+                      <h5 className="text-sm font-medium">{edu.degree}</h5>
+                      <p className="text-xs text-zinc-400">
+                        {edu.institution} • {edu.year}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </AnimatedSection>
+
           {/* Professional Certifications */}
           <AnimatedSection animation="fade-up" delay={100}>
             <div className="space-y-4">
@@ -23,9 +58,12 @@ export function CredentialsSection() {
                 <Award className="w-4 h-4 mr-2 text-cyan-400" />
                 Professional Certifications
               </h4>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
+              <div className="space-y-3 sm:space-y-4">
                 {credentialsInfo.certifications.map((cert, index) => (
-                  <div key={index} className="flex items-start bg-zinc-800/30 p-2 sm:p-3 rounded-lg">
+                  <div
+                    key={index}
+                    className="flex items-start bg-zinc-800/30 p-2 sm:p-3 rounded-lg"
+                  >
                     {cert.logo && (
                       <div className="relative w-10 h-10 rounded overflow-hidden mr-3 flex-shrink-0 bg-zinc-800">
                         <Image
@@ -57,40 +95,8 @@ export function CredentialsSection() {
               </div>
             </div>
           </AnimatedSection>
-
-          {/* Education */}
-          <AnimatedSection animation="fade-up" delay={200}>
-            <div className="space-y-4">
-              <h4 className="text-sm font-medium text-zinc-400 flex items-center border-b border-zinc-800 pb-2">
-                <GraduationCap className="w-4 h-4 mr-2 text-cyan-400" />
-                Education
-              </h4>
-              <div className="space-y-3 sm:space-y-4">
-                {credentialsInfo.education.map((edu, index) => (
-                  <div key={index} className="flex items-start bg-zinc-800/30 p-2 sm:p-3 rounded-lg">
-                    {edu.logo && (
-                      <div className="relative w-10 h-10 rounded overflow-hidden mr-3 flex-shrink-0 bg-zinc-800">
-                        <Image
-                          src={edu.logo || "/placeholder.svg"}
-                          alt={edu.institution}
-                          fill
-                          className="object-contain p-1"
-                        />
-                      </div>
-                    )}
-                    <div>
-                      <h5 className="text-sm font-medium">{edu.degree}</h5>
-                      <p className="text-xs text-zinc-400">
-                        {edu.institution} • {edu.year}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </AnimatedSection>
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }
