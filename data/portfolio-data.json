@@ -4,15 +4,15 @@
     "description": "Portfolio website showcasing web development and UI/UX design work"
   },
   "personal": {
-    "name": "Dimas Rizky Maulana",
+    "name": "Dimas Rizky M",
     "title": "Web Frontend & Backend | UI/UX Designer",
     "location": "Cirebon, Indonesia",
-    "avatar": "/confident-professional.png",
+    "avatar": "/dimspicture.jpeg",
     "email": "dimasrizkym3@gmail.com",
     "phone": "",
     "workingHours": "",
     "availableForWork": true,
-    "badges": ["Web Frontend", "Web Backend", "UI/UX Design"],
+    "badges": [],
     "social": [
       {
         "platform": "GitHub",
@@ -98,7 +98,7 @@
     },
     {
       "title": "Frontend Designer",
-      "company": "detikcom",
+      "company": "Detikcom",
       "period": "Sep 2024 - Dec 2024",
       "employmentType": "Internship",
       "description": "Internship position focusing on frontend development for product advertisements and website development.",
@@ -119,7 +119,7 @@
       "company": "PT Boer Technology (Btech)",
       "period": "Jun 2022 - Jul 2023",
       "employmentType": "Full-time",
-      "description": "Comprehensive role in UI/UX design and frontend development for E-Learning platform, progressing from internship to full-time position.",
+      "description": "Comprehensive role in UI/UX design and frontend development for E-Learning platform, progressing from internship to freelance position.",
       "achievements": [
         "Designed UI/UX for E-Learning Adinusa.id and Backoffice Adinusa including defining website purpose, conducting user research, creating wireframes, developing visual design system, and creating interactive prototypes",
         "Created web frontend templates from designs using HTML/CSS/JavaScript/TailwindCSS/Bootstrap",
@@ -135,6 +135,9 @@
         "JavaScript",
         "TailwindCSS",
         "Bootstrap",
+        "Figma",
+        "Slicing",
+        "pixel-perfect",
         "Wireframing",
         "Prototyping",
         "Design Systems",
@@ -144,11 +147,11 @@
         {
           "title": "UI/UX Designer & Web Frontend",
           "period": "Dec 2022 - Jul 2023",
-          "employmentType": "Full-time",
-          "description": "Full-time position designing UI/UX for E-Learning platform and creating frontend templates"
+          "employmentType": "Freelance",
+          "description": "Freelance position designing UI/UX for E-Learning platform and creating frontend templates"
         },
         {
-          "title": "UI/UX & Web Frontend",
+          "title": "UI/UX Designer & Web Frontend",
           "period": "Jun 2022 - Sep 2022",
           "employmentType": "Internship",
           "description": "Internship position focusing on redesigning e-learning platform and creating design systems"
