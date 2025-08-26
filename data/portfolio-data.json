@@ -215,28 +215,22 @@
       "Wireframing",
       "Design System",
       "UI Design",
+      "UX Research",
       "Prototyping",
       "Usability Testing"
     ],
     "development": [
-      "HTML",
-      "CSS",
+      "HTML/CSS",
       "JavaScript",
       "Bootstrap",
       "TailwindCSS",
       "ReactJS",
+      "ExpressJS",
+      "HapiJS",
       "SQL",
       "PHP",
       "Laravel",
       "Git"
-    ],
-    "uxMethods": [
-      "Design Thinking",
-      "Wireframing",
-      "Design System",
-      "UI Design",
-      "Prototyping",
-      "Usability Testing"
     ],
     "softSkills": [
       "Analytical thinking",
@@ -252,7 +246,7 @@
       },
       {
         "name": "English",
-        "proficiency": "Intermediate"
+        "proficiency": "B1 / Intermediate"
       }
     ]
   },
