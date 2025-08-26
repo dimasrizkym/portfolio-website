@@ -81,10 +81,9 @@ export function PortfolioHeader() {
 
   const isNavItemActive = (itemHref: string) => {
     // Home
-    if (itemHref === "/" && pathname === "/" && activeSection === "") {
-      return true;
+    if (itemHref === "/") {
+      return pathname === "/" && activeSection === "";
     }
-
     // Projects page OR section
     if (itemHref === "/#projects" || itemHref === "/projects") {
       if (pathname === "/projects") return true;
@@ -175,11 +174,7 @@ export function PortfolioHeader() {
       >
         <nav className="flex flex-col space-y-4">
           {navItems.map((item, index) => {
-            const isActive =
-              (item.href === "/" && pathname === "/" && activeSection === "") ||
-              (item.href === "/projects" && pathname === "/projects") ||
-              (item.href.startsWith("#") &&
-                activeSection === item.href.substring(1));
+            const isActive = isNavItemActive(item.href);
 
             return (
               <Link
