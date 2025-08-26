@@ -41,27 +41,27 @@
     },
     {
       "label": "About",
-      "href": "#about"
+      "href": "/#about"
     },
     {
       "label": "Experience",
-      "href": "#experience"
+      "href": "/#experience"
     },
     {
       "label": "Credentials",
-      "href": "#credentials"
+      "href": "/#credentials"
     },
     {
       "label": "Skills",
-      "href": "#skills"
+      "href": "/#skills"
     },
     {
       "label": "Projects",
-      "href": "#projects"
+      "href": "/#projects"
     },
     {
       "label": "Achievements",
-      "href": "#achievements"
+      "href": "/#achievements"
     }
   ],
   "experience": [

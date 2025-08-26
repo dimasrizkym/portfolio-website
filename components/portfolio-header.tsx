@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { getNavItems, getPersonalInfo } from "@/lib/data";
+import { getNavItems } from "@/lib/data";
 import { usePathname } from "next/navigation";
 
 export function PortfolioHeader() {
@@ -16,7 +16,6 @@ export function PortfolioHeader() {
   const pathname = usePathname();
 
   const navItems = getNavItems();
-  const personalInfo = getPersonalInfo();
 
   useEffect(() => {
     if (mobileMenuOpen) {
