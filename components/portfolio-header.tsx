@@ -37,8 +37,8 @@ export function PortfolioHeader() {
 
       // Determine active section based on scroll position
       const sections = navItems
-        .filter((item) => item.href.startsWith("#"))
-        .map((item) => item.href.substring(1));
+        .filter((item) => item.href.startsWith("/#"))
+        .map((item) => item.href.substring(2));
 
       // Find the current section in view
       for (const section of sections.reverse()) {
@@ -79,6 +79,27 @@ export function PortfolioHeader() {
     setMobileMenuOpen(false);
   };
 
+  const isNavItemActive = (itemHref: string) => {
+    // Home
+    if (itemHref === "/" && pathname === "/" && activeSection === "") {
+      return true;
+    }
+
+    // Projects page OR section
+    if (itemHref === "/#projects" || itemHref === "/projects") {
+      if (pathname === "/projects") return true;
+      if (pathname === "/" && activeSection === "projects") return true;
+    }
+
+    // Other section anchors
+    if (itemHref.startsWith("/#")) {
+      return activeSection === itemHref.substring(2); // hapus "/#"
+    }
+
+    // Direct match
+    return pathname === itemHref;
+  };
+
   return (
     <header
       className={cn(
@@ -101,11 +122,7 @@ export function PortfolioHeader() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-1">
           {navItems.map((item) => {
-            const isActive =
-              (item.href === "/" && pathname === "/" && activeSection === "") ||
-              (item.href === "/projects" && pathname === "/projects") ||
-              (item.href.startsWith("#") &&
-                activeSection === item.href.substring(1));
+            const isActive = isNavItemActive(item.href);
 
             return (
               <Link
