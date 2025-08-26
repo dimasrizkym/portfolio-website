@@ -66,85 +66,96 @@
   ],
   "experience": [
     {
-      "company": "Sekolah Tinggi Ilmu Komputer Poltek Cirebon",
-      "period": "Sep 2023 - Jun 2025",
-      "location": "Cirebon, West Java, Indonesia",
+      "company": "Detikcom",
+      "location": "Jakarta, Indonesia",
       "positions": [
         {
-          "title": "Lead Computer Lab Assistant",
-          "period": "Feb 2025 - Jun 2025",
-          "employmentType": "Part-time",
-          "description": ["", "point"]
-        },
-        {
-          "title": "Computer Lab Assistant",
-          "period": "Sep 2023 - Feb 2025",
-          "employmentType": "Part-time",
+          "title": "Frontend Designer",
+          "period": "Sep 2024 - Dec 2024",
+          "employmentType": "Internship",
           "description": [
-            "ssisted the instructor in managing computer lab practicals for the Web Design and Web Programming courses,",
-            "ssisted the instructor in managing computer ",
-            "ssisted the instructor in managing computer lab practicals for the Web Design and Web Programming courses, ssisted the instructor in "
+            "Developed frontend code for product ads, improving user interaction and enhancing ads visibility on the platform.",
+            "Contributed to the development of websites, including Detik Awards, Tapal Batas, DStory, Ad Marketdata Pegadaian Campaign, Ads Sales Product, and Detik Ads catalog, successfully completing 100% of tasks on time.",
+            "Initiated the DetikAds catalog project for tracking and reporting ad catalogs, overseeing all stages from PRD, UI/UX design, ERD, prototyping, Laravel development, QA testing, to deployment."
           ]
         }
       ],
       "technologies": [
-        "Web Design",
-        "Web Programming",
-        "Teaching Assistance",
-        "Technical Support"
+        "HTML/CSS/JS",
+        "TailwindCSS",
+        "Bootstrap",
+        "Laravel",
+        "UI/UX Design",
+        "Product Development"
       ]
     },
     {
       "company": "Sekolah Tinggi Ilmu Komputer Poltek Cirebon",
-      "positions": [
-        {
-          "title": "Lead Computer Lab Assistant",
-          "period": "Feb 2025 - Jun 2025",
-          "employmentType": "Full-time",
-          "description": ["point", "point"]
-        }
-      ],
-      "technologies": [
-        "Web Design",
-        "Web Programming",
-        "Teaching Assistance",
-        "Technical Support"
-      ]
-    },
-    {
-      "company": "Sekolah Tinggi Ilmu Komputer Poltek Cirebon",
-      "positions": [
-        {
-          "title": "Lead Computer Lab Assistant",
-          "period": "Feb 2025 - Jun 2025",
-          "employmentType": "Full-time",
-          "description": ["point", "point"]
-        }
-      ],
-      "technologies": [
-        "Web Design",
-        "Web Programming",
-        "Teaching Assistance",
-        "Technical Support"
-      ]
-    },
-    {
-      "company": "Sekolah Tinggi Ilmu Komputer Poltek Cirebon",
-      "period": "Sep 2023 - Jun 2025",
       "location": "Cirebon, West Java, Indonesia",
       "positions": [
         {
-          "title": "Lead Computer Lab Assistant",
-          "period": "Feb 2025 - Jun 2025",
-          "employmentType": "Full-time",
-          "description": ["point", "point"]
+          "title": "Lead Computer Lab Assistant ",
+          "period": "Jan 2025 - Jun 2025",
+          "employmentType": "Part-time",
+          "description": [
+            "Promoted to lead role managing computer lab practicals for Web Design and Web Programming courses.",
+            "Provided technical guidance, assisted with grading assignments, and supported over 80 students each semester."
+          ]
+        },
+        {
+          "title": "Computer Lab Assistant",
+          "period": "Sep 2023 - Dec 2024",
+          "employmentType": "Part-time",
+          "description": [
+            "Assisted the instructor in managing computer lab practicals for Web Design and Web Programming courses, providing technical guidance to approximately 10–35 students per session.",
+            "Offered support to students in understanding course material, troubleshooting issues, and ensuring smooth practical sessions."
+          ]
         }
       ],
       "technologies": [
-        "Web Design",
-        "Web Programming",
-        "Teaching Assistance",
+        "ReactJs",
+        "Laravel",
+        "HTML/CSS/JS",
+        "TailwindCSS",
+        "Bootstrap",
+        "Teaching",
+        "Mentoring",
         "Technical Support"
+      ]
+    },
+    {
+      "company": "PT Boer Technology (BTech)",
+      "location": "Remote",
+      "positions": [
+        {
+          "title": "Web Frontend & UI/UX Designer",
+          "period": "Dec 2022 - Jul 2023",
+          "employmentType": "Freelance",
+          "description": [
+            "Designed UI/UX for E-Learning Adinusa.id and Backoffice Adinusa, including defining website purpose, conducting user research, wireframing, creating visual design system, and prototyping.",
+            "Converted finalized designs into responsive web frontend templates using HTML, CSS, JavaScript, TailwindCSS, and Bootstrap.",
+            "Performed usability testing and refined designs based on feedback."
+          ]
+        },
+        {
+          "title": "Web Frontend & UI/UX Designer Intern",
+          "period": "Jun 2022 - Sep 2022",
+          "employmentType": "Internship",
+          "description": [
+            "Redesigned the E-Learning Adinusa.id dashboard and backoffice platform to improve user experience.",
+            "Created design systems, components, and variants following atomic design principles."
+          ]
+        }
+      ],
+      "technologies": [
+        "HTML/CSS/JS",
+        "TailwindCSS",
+        "Bootstrap",
+        "Figma",
+        "Wireframing",
+        "Prototyping",
+        "Design Systems",
+        "Usability Testing"
       ]
     }
   ],
